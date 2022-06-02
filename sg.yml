@@ -1,0 +1,24 @@
+security_groups_dictionary = {
+        'http_https': {
+            'group_name': 'http_https_sg',
+            'rules': [
+                {
+                    'port': 80,
+                    'description': 'allow traffic from anywhere thru the port 80'
+                },
+                {
+                    'port': 443,
+                    'description': 'allow traffic from anywhere thru the port 443'
+                },
+            ],
+        },
+        'ssh': {
+            'group_name': 'ssh_sg',
+            'rules': [
+                {
+                    'port': 22,
+                    'description': 'allow trrafic from anywhere thru the port 22'
+                }
+            ]
+        },
+    }
